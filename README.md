@@ -1,5 +1,4 @@
 # unpaintd
-unpaintd – Track, rate and review artworks you've seen, discover new artists, and unlock achievements along the way.
 
 **The art you've seen. The stories you keep.**
 
@@ -22,7 +21,7 @@ unpaintd is my side project, built between night shifts and painting sessions. I
 - **Your collection:** Browse, search, filter, and delete logged works.
 - **Progression:** Level up as you discover more **unique** works.
 - **Achievements:** Unlock milestones for logging, reviews, museums, and mediums.
-- **Local-first:** Data will be saved in your browser with `localStorage`; no account or backend yet.
+- **Local-first:** Data is saved in your browser with `localStorage`; no account or backend yet.
 - **Export/import:** Download your diary as JSON or import it again.
 
 ## Levels
@@ -54,22 +53,34 @@ unpaintd is my side project, built between night shifts and painting sessions. I
 
 ## Quick start
 
-Work in progress.
+Open `index.html` in a modern browser. No installation or build step required.
+
+For a local server, you can run:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
 
 ## Project layout
 
 ```text
 unpaintd/
+├── index.html
+├── styles.css
+├── app.js
 ├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ## Roadmap
 
-- [x] Set up repository and readme
-- [ ] Local diary and ratings
-- [ ] Level progression and achievements
-- [ ] Search and filter
-- [ ] JSON export/import
+- [x] Local diary and ratings
+- [x] Level progression and achievements
+- [x] Search and filter
+- [x] JSON export/import
 - [ ] Profiles and sign-in
 - [ ] Follow friends and see their activity
 - [ ] Museum and exhibition pages
@@ -84,8 +95,9 @@ I want this to be about actual encounters with art, especially work made by peop
 
 ## Privacy
 
-Do not enter sensitive personal information.
+This prototype stores entries only in the browser where you use it. Clearing site data can erase them, so export a backup. Do not enter sensitive personal information.
 
 ## License
 
 See [LICENSE](LICENSE).
+
